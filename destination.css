@@ -1,0 +1,93 @@
+@media only screen and (min-device-width : 1024px){
+    body{
+        background-image: url("images/destination/background-destination-desktop.jpg");
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+      background-image: url("images/destination/background-destination-mobile.jpg");
+    }
+}
+
+@media only screen and (min-device-width : 426px) and (max-device-width : 1023px) {
+    body {
+      background-image: url("images/destination/background-destination-tablet.jpg");
+    }
+}
+
+.header{
+    padding: 1%;
+}
+
+.nav-link{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.card-group{
+    margin: 5%;
+}
+
+.card{
+    position: relative;
+    min-width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: .5s;
+}
+
+.card:hover{
+    transform:scale(1.1);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 45px !important;
+    font-weight: bold !important;
+}
+
+h5{
+    text-align: center;
+    color: white;
+    font-size: 30px !important;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+img{
+    padding: 20%;
+}
+

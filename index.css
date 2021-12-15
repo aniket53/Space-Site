@@ -1,0 +1,82 @@
+@media only screen and (min-device-width : 1024px){
+    body{
+        background-image: url("images/home/background-home-desktop.jpg");
+    }
+    .intro-div{
+        margin-left: 7vw;
+        margin-top: 18vw;
+        /* 100px=7.66vw */
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+      background-image: url("images/home/background-home-mobile.jpg");
+    }
+    .intro-div{
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-top: 7vw;
+        text-align: center;
+        /* 100px=7.66vw */
+    }
+}
+
+@media only screen and (min-device-width : 426px) and (max-device-width : 1023px) {
+    body {
+      background-image: url("images/home/background-home-tablet.jpg");
+    }
+    .intro-div{
+        margin-left: 7vw; 
+        margin-top: 10vw;
+        /* 100px=7.66vw */
+    }
+}
+
+.header{
+    padding: 1%;
+}
+
+.nav-link{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h5{
+    color: rgb(208, 214, 249);
+    font-size: 28px !important;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 1px;
+}
+
+h1{
+    color: white;
+    font-size: 100px !important;
+    font-family: 'Bellefair', serif;
+}
+
+p{
+    color: white;
+    font-size: 16px;
+}
+
